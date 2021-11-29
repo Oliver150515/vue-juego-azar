@@ -40,7 +40,6 @@ export default {
 
       if (!value.includes("?")) return;
       this.isValidQuestion = true;
-      //TODO: Realizar peticion htpp
       this.getAnswer();
     },
   },
