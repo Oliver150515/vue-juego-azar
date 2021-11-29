@@ -4,7 +4,7 @@
   <div class="indecision-container">
     <input type="text" placeholder="Escribe una pregunta" v-model="question" />
     <p>Recordar terminar las preguntas con (?)</p>
-
+    <!--VALIDAR SI ES UNA PREGUNTA VALIDA-->
     <div v-if="isValidQuestion">
       <h2>{{ question }}</h2>
       <h1>{{ answer }}</h1>
@@ -30,7 +30,7 @@ export default {
         (response) => response.json()
       );
 
-      this.answer = answer === "yes" ? "Si" : "No!";
+      this.answer = answer === "yes" ? "Si!!" : "No!";
       this.img = image;
     },
   },
